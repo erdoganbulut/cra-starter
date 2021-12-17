@@ -8,15 +8,17 @@ const Home = function () {
   const dispatch = useAppDispatch();
   return (
     <div className="Home">
-      <p>Home works!</p>
-      <div>
-        <Button aria-label="Increment value" onClick={() => dispatch(increment())}>
-          Increment
-        </Button>
-        <span>{count}</span>
-        <Button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
-          Decrement
-        </Button>
+      <div className="container">
+        <p>Home works!</p>
+        <div>
+          <Button aria-label="Increment value" onClick={() => dispatch(increment())}>
+            Increment
+          </Button>
+          <span>{count}</span>
+          <Button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
+            Decrement
+          </Button>
+        </div>
       </div>
     </div>
   );
